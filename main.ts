@@ -13,6 +13,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 input.onButtonPressed(Button.A, function () {
     radio.sendNumber(4)
 })
+basic.showIcon(IconNames.Yes)
 radio.setGroup(77)
 basic.forever(function () {
 	
