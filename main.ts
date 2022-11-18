@@ -1,6 +1,7 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 2) {
-    	
+        basic.showIcon(IconNames.Sad)
+        music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Forever)
     }
 })
 input.onButtonPressed(Button.A, function () {
@@ -23,8 +24,7 @@ input.onButtonPressed(Button.B, function () {
     Entry = "" + Entry + "B"
 })
 input.onGesture(Gesture.Shake, function () {
-    basic.showIcon(IconNames.Sad)
-    music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Forever)
+	
 })
 let Password = ""
 let Entry = ""
