@@ -15,10 +15,12 @@ input.onButtonPressed(Button.AB, function () {
         music.stopMelody(MelodyStopOptions.All)
     } else {
         basic.showIcon(IconNames.No)
+        music.playTone(175, music.beat(BeatFraction.Whole))
         Entry = ""
         basic.showIcon(IconNames.Sad)
-        music.playTone(175, music.beat(BeatFraction.Whole))
     }
+    basic.pause(200)
+    Entry = ""
 })
 input.onButtonPressed(Button.B, function () {
     Entry = "" + Entry + "B"
